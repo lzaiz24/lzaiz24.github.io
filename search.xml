@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>智能指针（一）shared_ptr</title>
-      <link href="/2023/09/26/%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88%EF%BC%88%E4%B8%80%EF%BC%89shared-ptr/"/>
-      <url>/2023/09/26/%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88%EF%BC%88%E4%B8%80%EF%BC%89shared-ptr/</url>
-      
-        <content type="html"><![CDATA[<h2 id="文章测试"><a href="#文章测试" class="headerlink" title="文章测试"></a>文章测试</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vld.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;memory&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">std::shared_ptr&lt;<span class="type">int</span>&gt; sharedI1 = std::<span class="built_in">make_shared</span>&lt;<span class="type">int</span>&gt;();</span><br><span class="line">std::cout &lt;&lt; sharedI1.<span class="built_in">use_count</span>() &lt;&lt; std::endl;</span><br><span class="line"><span class="function">std::shared_ptr&lt;<span class="type">int</span>&gt; <span class="title">sharedI2</span><span class="params">(sharedI1)</span></span>;</span><br><span class="line">std::cout &lt;&lt; sharedI1.<span class="built_in">use_count</span>() &lt;&lt; std::endl;</span><br><span class="line">sharedI2.<span class="built_in">reset</span>();</span><br><span class="line">std::cout &lt;&lt; sharedI1.<span class="built_in">use_count</span>() &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> c++ </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> c++ </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>博客测试</title>
       <link href="/2023/09/25/2023/"/>
       <url>/2023/09/25/2023/</url>
