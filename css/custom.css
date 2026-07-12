@@ -1,4 +1,9 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/*页脚与头图透明*/
+/*页脚与头图透明*/
+html,
+body {
+    overflow-x: clip;
+}
+
 #footer {
     background: transparent !important;
 }
@@ -124,6 +129,12 @@
 }
 
 /* 黑夜模式适配 */
+@media (prefers-reduced-motion: reduce) {
+    #aside-content>.card-widget.card-info {
+        animation: none !important;
+    }
+}
+
 [data-theme="dark"] #aside-content>.card-widget.card-info {
     background: #191919ee;
 }
