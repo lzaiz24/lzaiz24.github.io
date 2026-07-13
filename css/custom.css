@@ -145,6 +145,28 @@ body {
     border-radius: 8px;
 }
 
+/* Keep homepage post cards readable when bilingual titles are long. */
+#recent-posts>.recent-post-item>.recent-post-info>.article-title {
+    font-size: 1.35em;
+    line-height: 1.35;
+    text-wrap: balance;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
+    line-height: 1.75;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.content {
+    margin-top: 12px;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 768px) {
+    #recent-posts>.recent-post-item>.recent-post-info>.article-title {
+        font-size: 1.25em;
+    }
+}
+
 
 
 /* 页脚与头图透明 */
